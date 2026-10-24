@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="description" content="Schema interattivo del continuum delle identificazioni compensatorie: una rappresentazione geometrica dell'efficienza identificatoria e della funzione vicaria Iᵥ.">
+<title>Identificazioni compensatorie — Schema interattivo</title>
+<style>
+:root{--ink:#243244;--muted:#596a7b;--line:#dce3ea;--blue:#247da8;--paper:#fff;--bg:#f4f6f8;--teal:#138982}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,'Segoe UI',Arial,sans-serif}
+main{max-width:1050px;margin:32px auto 55px;padding:36px 42px 30px;background:var(--paper);border:1px solid #e3e8ed;border-radius:15px;box-shadow:0 12px 35px #25384d0b}
+.eyebrow{font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:#667b8b;font-weight:700;margin:0 0 8px}
+h1{font-family:Georgia,'Times New Roman',serif;font-weight:600;font-size:clamp(25px,3.5vw,38px);line-height:1.18;margin:0 0 13px;letter-spacing:-.02em}
+.intro{margin:0 0 20px;max-width:760px;color:var(--muted);font-size:15px}
+.diagram{border:1px solid var(--line);border-radius:11px;background:white;overflow:hidden}
+.diagram svg{display:block;width:100%;height:auto}
+.control-panel{margin-top:22px}
+.range-label{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:15px;font-weight:650}
+.range-label output{font-variant-numeric:tabular-nums;font-size:17px;color:var(--blue)}
+input[type=range]{display:block;width:100%;height:35px;accent-color:var(--blue);cursor:pointer;margin:8px 0 0}
+.endpoints{display:flex;justify-content:space-between;gap:20px;font-size:12px;color:var(--muted)}
+.actions{display:flex;flex-wrap:wrap;gap:9px;margin:19px 0 14px}
+button{appearance:none;border:1px solid #c8d3dc;background:white;color:var(--ink);border-radius:7px;padding:9px 13px;font:600 13px/1.3 system-ui,-apple-system,'Segoe UI',Arial,sans-serif;cursor:pointer}
+button:hover{background:#edf4f8;border-color:#9cb6c8}
+button:focus-visible,input:focus-visible{outline:3px solid #8bbce0;outline-offset:2px}
+button[aria-pressed=true]{background:#e8f2f8;border-color:#267da8;color:#175d84}
+button.export{margin-left:auto}
+.status{border-top:1px solid var(--line);padding-top:16px;margin-top:12px}
+.status strong{font-family:Georgia,serif;font-size:20px;font-weight:600}
+.status p{font-size:14px;color:var(--muted);margin:6px 0 12px}
+.metrics{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.metric{padding:10px 11px;border:1px solid var(--line);border-radius:8px;min-height:76px}
+.metric span{display:block;font-size:11px;color:var(--muted);line-height:1.3}
+.metric b{display:block;margin-top:7px;font-size:19px;font-weight:650;font-variant-numeric:tabular-nums}
+.notes{margin-top:22px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+.notes p{margin:0 0 9px}
+footer{font-size:12px;color:#788697;margin-top:16px}
+@media(max-width:700px){main{margin:0;padding:20px 13px 25px;border:0;border-radius:0}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.actions button.export{margin-left:0}.intro{font-size:14px}}
+@media print{body{background:white}main{border:0;box-shadow:none;padding:0;margin:0;max-width:none}.control-panel,.actions{display:none}.notes{font-size:11px}.diagram{border:0}.status{page-break-inside:avoid}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<div class="eyebrow">Modello metapsicologico · Figura interattiva</div>
+<h1>Continuum delle identificazioni compensatorie</h1>
+<p class="intro">Sposta il cursore per osservare come il movimento dell’Ideale dell’Io vicario (<em>Iᵥ</em>) determini simultaneamente le posizioni di <em>m</em> e <em>i(a)</em>, l’apertura del triangolo immaginario e l’estensione del quadrangolo della realtà.</p>
+</header>
+<figure style="margin:0">
+<div class="diagram" id="diagram" aria-label="Schema geometrico interattivo"><svg xmlns="http://www.w3.org/2000/svg" width="1180" height="770" viewBox="0 0 1180 770" role="img" aria-label="Schema delle identificazioni compensatorie: Identificazione mediana">
+ <style>
+ .point{font:italic 29px Georgia,'DejaVu Serif',serif;fill:#253344}.minor{font:italic 20px Georgia,'DejaVu Serif',serif;fill:#556475}.small{font:17px Arial,'DejaVu Sans',sans-serif;fill:#627182}.legend{font:17px Arial,'DejaVu Sans',sans-serif;fill:#37475a}.blue{fill:#267fb0}.teal{fill:#0f8982}
+ </style>
+ <rect width="1180" height="770" fill="#ffffff"/>
+ <rect x="135" y="130" width="710" height="209.14999999999998" fill="#c95753" fill-opacity=".045"/>
+ <rect x="135" y="339.15" width="710" height="235.85000000000002" fill="#c5a047" fill-opacity=".045"/>
+ <polygon points="135,339.15 529.578947368421,130 765,130 798.6757491426065,352.5" fill="#8ac5de" fill-opacity=".24"/>
+ <polygon points="135,339.15 529.578947368421,130 765,130" fill="#697a90" fill-opacity=".23"/>
+ <line x1="135" y1="575" x2="765" y2="130" stroke="#aeb7c2" stroke-width="2" stroke-dasharray="9 9"/>
+ <line x1="135" y1="130" x2="765" y2="130" stroke="#273442" stroke-width="3"/>
+ <line x1="135" y1="130" x2="135" y2="575" stroke="#273442" stroke-width="3"/>
+ <line x1="128" y1="135" x2="128" y2="339.15" stroke="#c75a55" stroke-width="5" stroke-linecap="round"/>
+ <line x1="128" y1="339.15" x2="128" y2="570" stroke="#c6a04c" stroke-width="5" stroke-linecap="round"/>
+ <line x1="135" y1="339.15" x2="845" y2="339.15" stroke="#978f9d" stroke-width="1.7" stroke-dasharray="8 8"/>
+ <polyline points="135,339.15 529.578947368421,130 765,130" fill="none" stroke="#344050" stroke-width="2.7"/>
+ <line x1="135" y1="339.15" x2="765" y2="130" stroke="#344050" stroke-width="2" stroke-opacity=".75"/>
+ <polyline points="135,339.15 798.6757491426065,352.5 765,130" fill="none" stroke="#18879d" stroke-width="3.4" stroke-linejoin="round"/>
+ <circle cx="135" cy="130" r="5.6" fill="#273442"/><circle cx="135" cy="575" r="5.6" fill="#273442"/><circle cx="765" cy="130" r="5.6" fill="#273442"/>
+ <circle cx="135" cy="339.15" r="5" fill="#9d8b9c"/>
+ <circle cx="529.578947368421" cy="130" r="7.5" fill="#367fae" stroke="white" stroke-width="2"/>
+ <circle cx="135" cy="339.15" r="8" fill="#c7524b" stroke="white" stroke-width="2"/>
+ <circle cx="798.6757491426065" cy="352.5" r="8" fill="#138982" stroke="white" stroke-width="2"/>
+ <text x="112" y="112" class="point">x</text>
+ <text x="87" y="327.15" class="point">m</text>
+ <text x="81" y="588" class="point">Φ₀</text>
+ <text x="782" y="112" class="point">M</text>
+ <text x="507.57894736842104" y="112" class="point blue">i(a)</text><text x="813.6757491426065" y="361.5" class="point teal">Iᵥ</text>
+ <text x="853" y="329.15" class="small">T · soglia</text>
+ <text x="862" y="220" class="small">Identificazioni</text>
+ <text x="862" y="243" class="small">«cattive»</text>
+ <text x="862" y="495" class="small">Identificazioni</text>
+ <text x="862" y="518" class="small">«buone»</text>
+ <line x1="135" y1="650" x2="1045" y2="650" stroke="#e0e6ed" stroke-width="1.5"/>
+ <rect x="140" y="690" width="22" height="15" fill="#697a90" fill-opacity=".30" stroke="#697a90" stroke-width="1"/>
+ <text x="175" y="704" class="legend">Triangolo immaginario (m–i(a)–M)</text>
+ <rect x="570" y="690" width="22" height="15" fill="#8ac5de" fill-opacity=".35" stroke="#18879d" stroke-width="1"/>
+ <text x="605" y="704" class="legend">Quadrangolo della realtà</text>
+ </svg></div>
+</figure>
+<section class="control-panel" aria-label="Controlli dell'animazione">
+<label class="range-label" for="level"><span>Grado di efficienza identificatoria</span><output id="percent" for="level">50%</output></label>
+<input type="range" id="level" min="0" max="100" step="1" value="50" aria-label="Grado di efficienza identificatoria">
+<div class="endpoints"><span>Minima efficienza</span><span>Massima efficienza</span></div>
+<div class="actions">
+<button type="button" data-level="0" aria-pressed="false">Limite fragile</button>
+<button type="button" data-level="50" aria-pressed="true">Identificazione mediana</button>
+<button type="button" data-level="100" aria-pressed="false">Limite autonomo</button>
+<button type="button" class="export" id="save-svg">Scarica SVG</button>
+<button type="button" id="save-png">Scarica PNG</button>
+</div>
+<div class="status" aria-live="polite" aria-atomic="true">
+<strong id="state-title">Identificazione mediana</strong>
+<p id="state-description">La distanza m–M è uguale alla distanza m–Iᵥ.</p>
+</div>
+<div class="metrics">
+<div class="metric"><span>Distanza m–M</span><b id="dM">—</b></div>
+<div class="metric"><span>Distanza m–Iᵥ</span><b id="dV">—</b></div>
+<div class="metric"><span>Distanza i(a)–M</span><b id="di">—</b></div>
+<div class="metric"><span>Area triangolo immaginario</span><b id="tri">—</b></div>
+<div class="metric"><span>Area quadrangolo realtà</span><b id="quad">—</b></div>
+</div>
+</section>
+<section class="notes" aria-label="Nota metodologica">
+<p><strong>Nota di lettura.</strong> La soglia è collocata al 47% dell’asse x–Φ₀. Nella configurazione mediana m è esattamente equidistante da M e Iᵥ; nella regione superiore prevale M, in quella inferiore prevale Iᵥ. Le qualificazioni «buone» e «cattive» si riferiscono esclusivamente al grado di efficienza compensatoria.</p>
+<p>Le distanze, le aree e la scala 0–100 sono <em>convenzioni di rappresentazione</em>, non misure cliniche. I due estremi sono configurazioni limite; al limite fragile M e Iᵥ coincidono, per cui l’uguaglianza delle distanze è degenere e non costituisce una seconda identificazione mediana. L’efficienza compensatoria non coincide necessariamente con il benessere soggettivo.</p>
+</section>
+<footer>Figura autonoma · Nessun servizio esterno richiesto · Funziona anche offline</footer>
+</main>
+<script>
+'use strict';
+const X=135,Y=130,W=630,H=445,S=.47*H,VM=.5*H,UM=Math.sqrt(W*W+2*VM*S-VM*VM),IM=(238/380)*W,MY0=(28/260)*H,MY1=.9*H;
+const range=document.getElementById('level');
+const fmt=n=>n.toFixed(1).replace('.',',');
+const fmtArea=n=>Math.round(n).toLocaleString('it-IT');
+function calc(p){
+ const t=p/100;
+ let u,v,my,ix;
+ if(t<=.5){const a=2*t;u=W+(UM-W)*a;v=VM*a;my=MY0+(S-MY0)*a;ix=W+(IM-W)*a;}
+ else{const a=2*t-1;u=UM*(1-a);v=VM+(H-VM)*a;my=S+(MY1-S)*a;ix=IM*(1-a);}
+ return {u,v,my,ix,dm:Math.hypot(W,my),dv:Math.hypot(u,v-my),di:W-ix,tri:(W-ix)*my/2,quad:(W*v+my*(u-ix))/2};
+}
+function makeSvg(p){
+ const {u,v,my,ix}=calc(p),mx=X,myAbs=Y+my,iX=X+ix,Mx=X+W,vX=X+u,vY=Y+v,bottom=Y+H,thresh=Y+S;
+ let ilabel='',vlabel='';
+ if(p===0){vlabel=`<text x="${Mx+20}" y="${Y+62}" class="minor teal">Iᵥ = M</text>`;}
+ else if(p===100){vlabel=`<text x="${X+25}" y="${bottom-20}" class="minor teal">Iᵥ → Φ₀</text>`;}
+ else{ilabel=`<text x="${iX-22}" y="${Y-18}" class="point blue">i(a)</text>`;vlabel=`<text x="${vX+15}" y="${vY+9}" class="point teal">Iᵥ</text>`;}
+ return `<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="770" viewBox="0 0 1180 770" role="img" aria-label="Schema delle identificazioni compensatorie, efficienza ${p}%">
+ <style>.point{font:italic 29px Georgia,'DejaVu Serif',serif;fill:#253344}.minor{font:italic 20px Georgia,'DejaVu Serif',serif;fill:#556475}.small{font:17px Arial,'DejaVu Sans',sans-serif;fill:#627182}.legend{font:17px Arial,'DejaVu Sans',sans-serif;fill:#37475a}.blue{fill:#267fb0}.teal{fill:#0f8982}</style>
+ <rect width="1180" height="770" fill="#fff"/>
+ <rect x="${X}" y="${Y}" width="${W+80}" height="${S}" fill="#c95753" fill-opacity=".045"/>
+ <rect x="${X}" y="${thresh}" width="${W+80}" height="${H-S}" fill="#c5a047" fill-opacity=".045"/>
+ <polygon points="${mx},${myAbs} ${iX},${Y} ${Mx},${Y} ${vX},${vY}" fill="#8ac5de" fill-opacity=".24"/>
+ <polygon points="${mx},${myAbs} ${iX},${Y} ${Mx},${Y}" fill="#697a90" fill-opacity=".23"/>
+ <line x1="${X}" y1="${bottom}" x2="${Mx}" y2="${Y}" stroke="#aeb7c2" stroke-width="2" stroke-dasharray="9 9"/>
+ <line x1="${X}" y1="${Y}" x2="${Mx}" y2="${Y}" stroke="#273442" stroke-width="3"/>
+ <line x1="${X}" y1="${Y}" x2="${X}" y2="${bottom}" stroke="#273442" stroke-width="3"/>
+ <line x1="${X-7}" y1="${Y+5}" x2="${X-7}" y2="${thresh}" stroke="#c75a55" stroke-width="5" stroke-linecap="round"/>
+ <line x1="${X-7}" y1="${thresh}" x2="${X-7}" y2="${bottom-5}" stroke="#c6a04c" stroke-width="5" stroke-linecap="round"/>
+ <line x1="${X}" y1="${thresh}" x2="${Mx+80}" y2="${thresh}" stroke="#978f9d" stroke-width="1.7" stroke-dasharray="8 8"/>
+ <polyline points="${mx},${myAbs} ${iX},${Y} ${Mx},${Y}" fill="none" stroke="#344050" stroke-width="2.7"/>
+ <line x1="${mx}" y1="${myAbs}" x2="${Mx}" y2="${Y}" stroke="#344050" stroke-width="2" stroke-opacity=".75"/>
+ <polyline points="${mx},${myAbs} ${vX},${vY} ${Mx},${Y}" fill="none" stroke="#18879d" stroke-width="3.4" stroke-linejoin="round"/>
+ <circle cx="${X}" cy="${Y}" r="5.6" fill="#273442"/><circle cx="${X}" cy="${bottom}" r="5.6" fill="#273442"/><circle cx="${Mx}" cy="${Y}" r="5.6" fill="#273442"/>
+ <circle cx="${X}" cy="${thresh}" r="5" fill="#9d8b9c"/>
+ <circle cx="${iX}" cy="${Y}" r="7.5" fill="#367fae" stroke="white" stroke-width="2"/>
+ <circle cx="${mx}" cy="${myAbs}" r="8" fill="#c7524b" stroke="white" stroke-width="2"/>
+ <circle cx="${vX}" cy="${vY}" r="8" fill="#138982" stroke="white" stroke-width="2"/>
+ <text x="${X-23}" y="${Y-18}" class="point">x</text><text x="${X-48}" y="${myAbs-12}" class="point">m</text>
+ <text x="${X-54}" y="${bottom+13}" class="point">Φ₀</text><text x="${Mx+17}" y="${Y-18}" class="point">M</text>
+ ${ilabel}${vlabel}
+ <text x="${Mx+88}" y="${thresh-10}" class="small">T · soglia</text>
+ <text x="${Mx+97}" y="${Y+90}" class="small">Identificazioni</text><text x="${Mx+97}" y="${Y+113}" class="small">«cattive»</text>
+ <text x="${Mx+97}" y="${bottom-80}" class="small">Identificazioni</text><text x="${Mx+97}" y="${bottom-57}" class="small">«buone»</text>
+ <line x1="135" y1="650" x2="1045" y2="650" stroke="#e0e6ed" stroke-width="1.5"/>
+ <rect x="140" y="690" width="22" height="15" fill="#697a90" fill-opacity=".30" stroke="#697a90" stroke-width="1"/>
+ <text x="175" y="704" class="legend">Triangolo immaginario (m–i(a)–M)</text>
+ <rect x="570" y="690" width="22" height="15" fill="#8ac5de" fill-opacity=".35" stroke="#18879d" stroke-width="1"/>
+ <text x="605" y="704" class="legend">Quadrangolo della realtà</text>
+ </svg>`;
+}
+function render(){
+ const p=Number(range.value),d=calc(p);
+ document.getElementById('diagram').innerHTML=makeSvg(p);
+ document.getElementById('percent').textContent=p+'%';
+ for(const [id,val] of [['dM',d.dm],['dV',d.dv],['di',d.di]])document.getElementById(id).textContent=fmt(val);
+ for(const [id,val] of [['tri',d.tri],['quad',d.quad]])document.getElementById(id).textContent=fmtArea(val);
+ const title=p===0?'Limite fragile':p===50?'Identificazione mediana':p===100?'Limite autonomo':p<50?'Prevalenza di M':'Prevalenza di Iᵥ';
+ const explanation=p===0?'Iᵥ e i(a) coincidono con M: il quadrangolo e il triangolo si riducono a superficie nulla.':p===50?'m è esattamente equidistante da M e Iᵥ, che in questa configurazione sono distinti.':p===100?'i(a) è massimamente distante da M; Iᵥ coincide con il limite Φ₀ e il quadrangolo raggiunge la massima estensione.':p<50?'m è più vicino a M che a Iᵥ: maggiore dipendenza dalla relazione immaginaria.':'m è più vicino a Iᵥ che a M: maggiore autonomia della funzione vicaria.';
+ document.getElementById('state-title').textContent=title;
+ document.getElementById('state-description').textContent=explanation;
+ document.querySelectorAll('[data-level]').forEach(btn=>btn.setAttribute('aria-pressed',String(Number(btn.dataset.level)===p)));
+}
+function downloadBlob(blob,name){const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),5000);}
+function serializedSvg(){return new XMLSerializer().serializeToString(document.querySelector('#diagram svg'));}
+document.getElementById('save-svg').addEventListener('click',()=>downloadBlob(new Blob([serializedSvg()],{type:'image/svg+xml;charset=utf-8'}),`identificazione_${range.value}.svg`));
+document.getElementById('save-png').addEventListener('click',()=>{
+ const xml=serializedSvg(),url=URL.createObjectURL(new Blob([xml],{type:'image/svg+xml;charset=utf-8'})),img=new Image();
+ img.onload=()=>{const c=document.createElement('canvas');c.width=1770;c.height=1155;const ctx=c.getContext('2d');ctx.fillStyle='#fff';ctx.fillRect(0,0,c.width,c.height);ctx.drawImage(img,0,0,c.width,c.height);c.toBlob(blob=>{if(blob)downloadBlob(blob,`identificazione_${range.value}.png`);else alert('Esportazione PNG non disponibile in questo browser.');},'image/png');URL.revokeObjectURL(url);};
+ img.onerror=()=>{URL.revokeObjectURL(url);alert('Esportazione PNG non disponibile. Usa Scarica SVG.')};img.src=url;
+});
+range.addEventListener('input',render);
+document.querySelectorAll('[data-level]').forEach(btn=>btn.addEventListener('click',()=>{range.value=btn.dataset.level;render();}));
+render();
+</script>
+</body>
+</html>
